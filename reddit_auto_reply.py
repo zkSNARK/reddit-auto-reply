@@ -2,15 +2,15 @@
     particular target author.
 
     Runs in a loop every 360 seconds.  Reparses the entire comment tree each time
-    so this is very inefficient.  However it works just fine.
+    so this is very inefficient.  However, it works just fine.
 
-    Not parameterized so you have to manually edit the code, but I can extend it
+    Not parameterized, so you have to manually edit the code, but I can extend it
     if you start using it frequently.
 
     This script is not guaranteed to work.  I have modified it since I last tested
     it, so it probably needs some tweaks.
 
-    Currently it is set to auto downvote whoever your target is, and it will only
+    Currently, it is set to auto downvote whoever your target is, and it will only
     reply if the target has no other replies.  Also, if it finds a comment without
     a reply by the target, it will definitely reply.
 
@@ -30,7 +30,6 @@ import praw
 import time
 
 from praw import Reddit
-from praw.models.comment_forest import Comment
 
 reddit: Reddit = praw.Reddit(client_id='client id comes from signing up for api',
                              client_secret='client secret comes from signing up for api',
@@ -39,7 +38,7 @@ reddit: Reddit = praw.Reddit(client_id='client id comes from signing up for api'
                              username='put your username here')
 
 
-def reply_if_is_target_author(comment: Comment, target_author: str, reply: str):
+def reply_if_is_target_author(comment, target_author: str, reply: str):
     """ Recursive function which finds comments by the target_author, downvotes them and
         submits your reply.
     """
