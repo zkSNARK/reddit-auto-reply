@@ -2,8 +2,9 @@
 
 Reddit auto reply and auto downvote.
 
-A script which recurrsively replies to (and downvotes) comments 
-by a particular author in a particular post.
+A script which recurrsively walks over a specific post and 
+automatically replies to (and downvotes) comments by a particular 
+author.
 
 Have you ever attempted to have a regular decent conversation on 
 reddit like any normal human being would, only to be confronted by 
@@ -24,3 +25,19 @@ It worked perfectly.  After a few rounds of interacting with my
 reply bot, that person finally realized that they would never have
 the last word.  They moved on and dug a little deeper into their
 troll hole.  Good riddance. 
+
+## usage
+First install the packages using pip or whatever.  You can use a 
+virtualenv if you want of course. 
+
+Run the program with the following command 
+python3 reddit_auto_reply.py
+
+Currently you have to edit the script manually, filling in the 
+necessary details by editing certain variables manually.  You 
+should be able to tell which variables need to be edited by going 
+into the program and reading the code.  If you want to know more 
+about what variables you need to edit or how to do so, create an 
+issue and let me know. I'm willing to put a small amount of work
+into this to make it better and more usable. 
+
