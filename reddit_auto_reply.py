@@ -58,7 +58,7 @@ def reply_if_is_target_author(comment, target_author: str, reply: str):
 
     else:
         for c in comment.replies:
-            reply_if_is_target_author(c)
+            reply_if_is_target_author(c, target_author, reply)
 
 
 def search(submission_id: str, follow_thread_id: str, target_author: str, reply: str):
@@ -85,9 +85,9 @@ if __name__ == '__main__':
     # the main post
     post_id = 'put_your_post_id_here'
 
-    # a particular comment thread.  I 'think' you could use the post ID here
+    # a particular comment thread.  I 'think' you could use the post ID here,
     # and it might scan the entire post (untested), but I tried it by running
-    # it on only a specific top level comment and it worked fine. 
+    # it on only a specific top level comment, and it worked fine.
     comment_thread_id = "put_your_comment_thread_id"
 
     target_author = "your_target_author_name"
