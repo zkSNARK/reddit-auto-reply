@@ -92,3 +92,4 @@ if __name__ == '__main__':
 
     random_reply = random.choice(replies)
     
+    search(post_id, comment_thread_id, target_author, random_reply)
