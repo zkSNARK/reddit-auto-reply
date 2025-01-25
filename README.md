@@ -13,7 +13,7 @@ evil.  Maybe this person just won't let you have the last word?
 It's probably because their mother didn't teach them good manners. 
 
 This script could enable you to repetitively shut this person down 
-without even having to spare them even a single thought. 
+without having to spare them even a single thought. 
 
 This is a mostly untested sript.  I only wrote it to end a certain 
 conversation.  It did a fine job at that, and it kept me from having 
